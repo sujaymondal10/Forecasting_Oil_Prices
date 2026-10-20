@@ -5,14 +5,14 @@ A statistical time-series forecasting model built in **R** to analyze, decompose
 
 ---
 
-## 🛠️ Tech Stack & Libraries
+## Tech Stack & Libraries
 * **Language:** R
 * **Core Packages:** `stats` (base R time-series functions), `trend` (for Mann-Kendall test)
 * **Statistical Concepts:** Classical Decomposition, Moving Averages, Seasonal Indices, Autocorrelation Function (ACF), Yule-Walker Estimation, Stationarity Testing (Runs Test, Mann-Kendall Test).
 
 ---
 
-## 📊 Dataset
+## Dataset
 * **Source:** Monthly crude oil price dataset spanning from 1986 onwards ($N = 408$ months / 34+ years).
 * **Key Variables:** `oil_price` (monthly historical pricing).
 
@@ -37,12 +37,15 @@ Model Assumption: Assumes a pure multiplicative framework; real-world commoditie
 Future Scope: Implement higher-order ARIMA, SARIMA, or machine learning hybrids (such as LSTM networks) for capturing complex nonlinear crude oil price volatility.
 
 
-## 📁 Project Structure
-```text
-📦 Oil-Price-Time-Series-Forecasting
- ┣ 📜 oil_price_dataset.csv     # Historical monthly oil price data
- ┣ 📜 analysis.R                # Full R script for decomposition and AR(2) modeling
- ┗ 📜 README.md                 # Project documentation
+## Project Structure
+
+Oil-Price-Time-Series-Forecasting
+
+ ┣  oil_price_dataset.csv     # Historical monthly oil price data
+ 
+ ┣  analysis.R                # Full R script for decomposition and AR(2) modeling
+ 
+ ┗  README.md                 # Project documentation
 
 
 rm(list = ls())
