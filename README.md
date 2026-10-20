@@ -21,6 +21,17 @@ A statistical time-series forecasting model built in **R** to analyze, decompose
 ## Prerequisites
 install.packages("trend")
 
+## Model Performance Comparison
+Model     MAE         MAPE (%)
+AR(1)   0.05526      5.8444%
+AR(2)   0.05121      5.3720%
+
+## Limitations & Future Scope:-
+# Moving Average Boundary Loss: Moving average smoothing results in the loss of data points at the beginning and end of the series, restricting direct boundary forecasting.
+
+# Model Assumption: Assumes a pure multiplicative framework; real-world commodities often follow mixed or dynamic economic structures.
+# Future Scope: Implement higher-order ARIMA, SARIMA, or machine learning hybrids (such as LSTM networks) for capturing complex nonlinear crude oil price volatility.
+
 
 ## 📁 Project Structure
 ```text
@@ -72,9 +83,3 @@ x_t1 = deseasonalize[-length(deseasonalize)]
 # (Extend regression setup for lag 1 and lag 2 as outlined in project documentation)
 
 
-Model Performance Comparison
-Model     MAE         MAPE (%)
-AR(1)   0.05526      5.8444%
-AR(2)   0.05121      5.3720%
-
-## Limitations & Future ScopeMoving Average Boundary Loss: Moving average smoothing results in the loss of data points at the beginning and end of the series, restricting direct boundary forecasting.Model Assumption: Assumes a pure multiplicative framework; real-world commodities often follow mixed or dynamic economic structures.Future Scope: Implement higher-order ARIMA, SARIMA, or machine learning hybrids (such as LSTM networks) for capturing complex nonlinear crude oil price volatility.
