@@ -23,7 +23,9 @@ install.packages("trend")
 
 ## Model Performance Comparison
 Model     MAE         MAPE (%)
+
 AR(1)   0.05526      5.8444%
+
 AR(2)   0.05121      5.3720%
 
 ## Limitations & Future Scope:-
